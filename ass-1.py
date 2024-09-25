@@ -4,7 +4,11 @@ def grades_please():
     quizzes = float(input("Enter the number of quizzes completed: "))
 
     lab_tot = (labs / 6) * 20
+    if lab_tot >= 20:
+        lab_tot = 20
     quiz_tot = (quizzes / 6) * 15
+    if quiz_tot >= 15:
+        quiz_tot = 15
 
     assi_1 = float(input("Enter grade for Assignment 1: "))
     assi_2 = float(input("Enter grade for Assignment 2: "))
@@ -33,3 +37,4 @@ def grades_please():
 #print("If you don't like it, you should've tried harder (: ")
 
 grades_please()
+
